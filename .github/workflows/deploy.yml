@@ -10,6 +10,8 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    # Sets Github environment name.
+    environment: testing
     # Environment variables at job level.
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.s3pxu6q.mongodb.net
