@@ -13,8 +13,8 @@ jobs:
     # Environment variables at job level.
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.s3pxu6q.mongodb.net
-      MONGODB_USERNAME: strats_mongo
-      MONGODB_PASSWORD: 123asdZXC
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
